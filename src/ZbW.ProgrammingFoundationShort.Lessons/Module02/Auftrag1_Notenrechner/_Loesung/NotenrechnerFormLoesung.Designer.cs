@@ -19,42 +19,68 @@ partial class NotenrechnerFormLoesung
     LblNote = new Label();
     LblBewertung = new Label();
     SuspendLayout();
-
+    // 
+    // LblPunkte
+    // 
     LblPunkte.AutoSize = true;
-    LblPunkte.Location = new Point(12, 20);
+    LblPunkte.Location = new Point(17, 33);
+    LblPunkte.Margin = new Padding(4, 0, 4, 0);
+    LblPunkte.Name = "LblPunkte";
+    LblPunkte.Size = new Size(134, 25);
+    LblPunkte.TabIndex = 0;
     LblPunkte.Text = "Punkte (0–100):";
-
-    TxtPunkte.Location = new Point(140, 17);
+    // 
+    // TxtPunkte
+    // 
+    TxtPunkte.Location = new Point(200, 28);
+    TxtPunkte.Margin = new Padding(4, 5, 4, 5);
     TxtPunkte.Name = "TxtPunkte";
-    TxtPunkte.Size = new Size(80, 23);
-
-    CmdBerechnen.Location = new Point(140, 50);
+    TxtPunkte.Size = new Size(113, 31);
+    TxtPunkte.TabIndex = 1;
+    // 
+    // CmdBerechnen
+    // 
+    CmdBerechnen.Location = new Point(200, 83);
+    CmdBerechnen.Margin = new Padding(4, 5, 4, 5);
     CmdBerechnen.Name = "CmdBerechnen";
-    CmdBerechnen.Size = new Size(130, 28);
+    CmdBerechnen.Size = new Size(186, 47);
+    CmdBerechnen.TabIndex = 2;
     CmdBerechnen.Text = "Note berechnen";
     CmdBerechnen.Click += CmdBerechnen_Click;
-
+    // 
+    // LblNote
+    // 
     LblNote.AutoSize = true;
-    LblNote.Location = new Point(12, 90);
-    LblNote.Name = "LblNote";
     LblNote.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-    LblNote.Text = "";
-
+    LblNote.Location = new Point(17, 150);
+    LblNote.Margin = new Padding(4, 0, 4, 0);
+    LblNote.Name = "LblNote";
+    LblNote.Size = new Size(0, 32);
+    LblNote.TabIndex = 3;
+    // 
+    // LblBewertung
+    // 
     LblBewertung.AutoSize = true;
-    LblBewertung.Location = new Point(12, 118);
+    LblBewertung.Location = new Point(17, 197);
+    LblBewertung.Margin = new Padding(4, 0, 4, 0);
     LblBewertung.Name = "LblBewertung";
-    LblBewertung.Text = "";
-
-    AutoScaleDimensions = new SizeF(7F, 15F);
+    LblBewertung.Size = new Size(0, 25);
+    LblBewertung.TabIndex = 4;
+    // 
+    // NotenrechnerFormLoesung
+    // 
+    AutoScaleDimensions = new SizeF(10F, 25F);
     AutoScaleMode = AutoScaleMode.Font;
-    ClientSize = new Size(320, 150);
+    ClientSize = new Size(457, 250);
     Controls.Add(LblPunkte);
     Controls.Add(TxtPunkte);
     Controls.Add(CmdBerechnen);
     Controls.Add(LblNote);
     Controls.Add(LblBewertung);
+    Margin = new Padding(4, 5, 4, 5);
     Name = "NotenrechnerFormLoesung";
     Text = "Notenrechner – Lösung";
+    Load += NotenrechnerFormLoesung_Load;
     ResumeLayout(false);
     PerformLayout();
   }

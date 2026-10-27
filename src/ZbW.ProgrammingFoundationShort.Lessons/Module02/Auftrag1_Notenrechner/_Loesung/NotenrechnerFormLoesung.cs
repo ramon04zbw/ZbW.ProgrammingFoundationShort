@@ -50,4 +50,9 @@ public partial class NotenrechnerFormLoesung : Form
     LblNote.Text = $"Note: {note}";
     LblBewertung.Text = $"Bewertung: {bewertung}";
   }
+
+  private void NotenrechnerFormLoesung_Load(object sender, EventArgs e)
+  {
+
+  }
 }
